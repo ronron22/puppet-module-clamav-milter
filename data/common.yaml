@@ -6,4 +6,4 @@ clamavmilter::service::service_manage: true
 
 clamavmilter::config::configuration_directory: '/etc/clamav/'
 clamavmilter::config::files:
-  - clamavmilter.conf
+  - clamav-milter.conf
