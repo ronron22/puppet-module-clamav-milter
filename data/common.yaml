@@ -1,5 +1,5 @@
 ---
-clamavmilter::service::service_name: 'clamavmilter'
+clamavmilter::service::service_name: 'clamav-milter'
 clamavmilter::service::service_enable: true
 clamavmilter::service::service_ensure: 'running'
 clamavmilter::service::service_manage: true
