@@ -9,7 +9,7 @@ class clamavmilter::config (
     file { $configuration_directory :
       ensure => present,
       sourceselect => all,
-      source => ["puppet:///modules/clamav-milter/${nodename}/etc/clamav-milter","/etc/clamavmilter "],
+      source => ["puppet:///modules/clamavmilter/${nodename}/etc/clamav-milter","/etc/clamavmilter "],
       recurse => true,
       notify   => Service[$service_name],  
     }
