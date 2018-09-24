@@ -1,5 +1,5 @@
 ---
-clamav-milter::install::clamav-milter_packages:
+clamavmilter::install::clamavmilter_packages:
   - clamav
-  - clamav-milter
+  - clamavmilter
 

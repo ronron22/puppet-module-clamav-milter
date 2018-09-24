@@ -1,7 +1,7 @@
-class clamav-milter {
+class clamavmilter {
         
-	include clamav-milter::install
-	include clamav-milter::config
-	include clamav-milter::service
+	include clamavmilter::install
+	include clamavmilter::config
+	include clamavmilter::service
 
 }

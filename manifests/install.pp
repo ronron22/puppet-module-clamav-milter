@@ -1,10 +1,10 @@
-class clamav-milter::install (
+class clamavmilter::install (
 
-	$clamav-milter_packages = hiera('clamav-milter_packages'),
+	$clamavmilter_packages = hiera('clamavmilter_packages'),
 
-	) inherits clamav-milter {
+	) inherits clamavmilter {
         
-		$clamav-milter_packages.each |String $package|{
+		$clamavmilter_packages.each |String $package|{
 			package { $package: 
 				ensure  =>  installed,
 			}

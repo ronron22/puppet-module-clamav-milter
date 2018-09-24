@@ -1,11 +1,11 @@
-class clamav-milter::service (
+class clamavmilter::service (
 
 	$service_name   = hiera('service_name'),
 	$service_enable = hiera('service_enable'),
 	$service_ensure = hiera('service_ensure'),
 	$service_manage = hiera('service_manage'),
 
-	) inherits clamav-milter {
+	) inherits clamavmilter {
 
 	if ! ($service_ensure in [ 'running', 'stopped' ]) {
 		fail('service_ensure parameter must be running or stopped')

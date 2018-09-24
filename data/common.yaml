@@ -1,9 +1,9 @@
 ---
-clamav-milter::service::service_name: 'clamav-milter'
-clamav-milter::service::service_enable: true
-clamav-milter::service::service_ensure: 'running'
-clamav-milter::service::service_manage: true
+clamavmilter::service::service_name: 'clamavmilter'
+clamavmilter::service::service_enable: true
+clamavmilter::service::service_ensure: 'running'
+clamavmilter::service::service_manage: true
 
-clamav-milter::config::configuration_directory: '/etc/clamav/'
-clamav-milter::config::files:
-  - clamav-milter.conf
+clamavmilter::config::configuration_directory: '/etc/clamav/'
+clamavmilter::config::files:
+  - clamavmilter.conf
